@@ -13,7 +13,8 @@
 ### 插屏效果记录
 >http://domain/spot/eff?i=xxxxxxxxxxxx&s=xxxxxxxxxxxxxxxxxxxx&rsd=rsd&e=e&pdt=1;
 
-参数模板
+## 参数模板
+
 | 参数        | 类型           | 说明  |
 | ------------- |:-------------:| -----:|
 | i      | string | appid |
