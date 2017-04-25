@@ -10,8 +10,30 @@
 ### 插屏请求
 >http://domain/spot/req?i={appid}&s=xxxxxxxxxxxxxxxxxxxx  
 
-### 插屏展示记录  
->http://domain/spot/show?i=xxxxxxxxxxxx&s=xxxxxxxxxxxxxxxxxxxx
+### 插屏效果记录
+>http://domain/spot/eff?i=xxxxxxxxxxxx&s=xxxxxxxxxxxxxxxxxxxx&rsd=rsd&e=e&pdt=1;
+
+参数模板
+| 参数        | 类型           | 说明  |
+| ------------- |:-------------:| -----:|
+| i      | string | appid |
+| s      | string | s参数 |
+| rsd      | string | rsd参数，效果记录用到，通过请求返回 |
+| e      | string | e参数，效果记录用到，通过请求返回 |
+| pdt      | int | 效果步骤,效果记录用到 |
+
+
+## PDT步骤标识
+
+| 步骤名称        | 字段           |
+| ------------- |:-------------:|
+|   展示    | 0 |
+|   点击    | 1 |
+|   下载成功    | 2 |
+|   安装成功    | 3 |
+|   开始下载    | 6 |
+|   开始安装    | 7 |
+
 
 ## s参数说明：
 
