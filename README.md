@@ -11,7 +11,7 @@
 >http://domain/spot/req?i={appid}&s=xxxxxxxxxxxxxxxxxxxx  
 
 ### 插屏效果记录
->http://domain/spot/eff?i=xxxxxxxxxxxx&s=xxxxxxxxxxxxxxxxxxxx&rsd=rsd&e=e&pdt=1;
+>http://domain/spot/eff?i=xxxxxxxxxxxx&s=xxxxxxxxxxxxxxxxxxxx&e=e&pdt=1;
 
 ## 参数模板
 
@@ -19,7 +19,6 @@
 | ------------- |:-------------:| -----:|
 | i      | string | appid |
 | s      | string | s参数 |
-| rsd      | string | rsd参数，效果记录用到，通过请求返回 |
 | e      | string | e参数，效果记录用到，通过请求返回 |
 | pdt      | int | 效果步骤,效果记录用到 |
 
@@ -146,7 +145,6 @@ s参数sjon例子：
 | ------------- |:-------------:| -----:|
 | spotid      | int | 插屏广告ID |
 | md5      | string | 广告MD5码,通过广告链接生成 |
-| rsd      | string | 	随机字符串（10位） |
 | e      | string | e参数，广告生成的唯一字符串，与rsd一起用于后面的统计接口中 |
 | name      | string | 应用名/广告名 |
 | pn      | string | 应用包名 |
