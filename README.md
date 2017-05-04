@@ -228,3 +228,15 @@ s参数sjon例子：
 | url      | string | 网页广告跳转地址，和app只需要填其中一个 |
 | title      | string | 通知栏 广告标题 |
 | content      | string | 通知栏 广告内容 |
+
+
+### 广告配置请求
+
+>http://domain/config?i={appid}
+
+### 返回参数说明
+| 参数        | 类型           | 说明  |
+| ------------- |:-------------:| -----:|
+| stimes      | int | 飘插一天展示的次数 |
+| ntimes      | int | 通知栏一天展示的次数 |
+| bl      | string | 不展示应用内飘插的应用包名，用,号分割 |
