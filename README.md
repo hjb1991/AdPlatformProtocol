@@ -183,3 +183,48 @@ s参数sjon例子：
 	}]
 }
 </code></pre>
+
+## 通知栏广告  
+
+### 通知栏请求
+>http://domain/notify/req?i={appid}&s=xxxxxxxxxxxxxxxxxxxx  
+
+### 通知栏效果记录
+>http://domain/notify/eff?i=xxxxxxxxxxxx&s=xxxxxxxxxxxxxxxxxxxx&e=e&pdt=1;
+
+## PDT步骤标识
+
+| 步骤名称        | 字段           |
+| ------------- |:-------------:|
+|   展示    | 0 |
+|   点击    | 1 |
+|   下载成功    | 2 |
+|   安装成功    | 3 |
+|   开始下载    | 6 |
+|   开始安装    | 7 |
+
+## 通知栏广告返回参数
+
+## 返回参数说明：
+
+| 参数        | 类型           | 说明  |
+| ------------- |:-------------:| -----:|
+| c      | int | 错误码 0为成功 |
+
+| ad      | string | 广告列表，以json数组形式表达 |
+
+### ad参数说明
+
+| 参数        | 类型           | 说明  |
+| ------------- |:-------------:| -----:|
+| notifyid      | int | 插屏广告ID |
+| md5      | string | 广告MD5码,通过广告链接生成 |
+| e      | string | e参数，广告生成的唯一字符串，与rsd一起用于后面的统计接口中 |
+| icon      | int | 通知栏图标 |
+| name      | string | 应用名/广告名 |
+| pn      | string | 应用包名 |
+| app      | string | APK广告下载地址，和url只需要填其中一个 |
+| tips      | string | 广告安装提示语，预留 |
+| url      | string | 网页广告跳转地址，和app只需要填其中一个 |
+| title      | string | 通知栏 广告标题 |
+| content      | string | 通知栏 广告内容 |
