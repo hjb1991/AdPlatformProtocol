@@ -2,10 +2,17 @@
 协议说明
 通用请求协议说明
 
+
+
+
 ## 请求模板
 > http://domain/产品类型/接口名称?s=参数加密
 
-## 例子：
+
+## 初始化请求
+
+>http://domain/init?i={appid}&s=xxxxxxxxxxxxxxxxxxxx  
+
 
 ### 插屏请求
 >http://domain/spot/req?i={appid}&s=xxxxxxxxxxxxxxxxxxxx  
@@ -73,6 +80,7 @@ s参数为用户参数表
 | osv      | int | 系统版本号,如17，18.19 |
 | rt      | long | 当前时间戳 |
 | sv      | int | sdk版本号 |
+| advid      | string | google广告ID |
 
 s参数sjon例子：
 <pre><code>
