@@ -27,7 +27,7 @@
 | i      | string | appid |
 | s      | string | s参数 |
 | e      | string | e参数，效果记录用到，通过请求返回 |
-| pdt      | int | 效果步骤,效果记录用到 |
+| ac      | int | 效果步骤,效果记录用到 |
 
 
 ## PDT步骤标识
