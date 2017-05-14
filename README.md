@@ -261,3 +261,4 @@ s参数sjon例子：
 | url      | string | dex下载地址 |
 | md5      | string | dex文件的md5码，用于判断文件是否完整 |
 | vc      | int | dex版本号，用于判断是否更新 |
+| name      | string | 文件名，填sdk.jar|
