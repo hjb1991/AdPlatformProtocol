@@ -60,8 +60,8 @@ s参数为用户参数表
 | cid      | string | 用户ID，通过IMEI等参数生成 |
 | dd      | string | 设备机型 |
 | dv      | string | 设备制造商 |
-| imei      | string | IMEI |
-| imsi      | string | IMSI |
+| ei      | string | IMEI |
+| si      | string | IMSI |
 | mac      | string | 设备MAC地址 |
 | sd      | int | 屏幕密度 |
 | sw      | int | 屏幕宽度 |
