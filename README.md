@@ -81,6 +81,7 @@ s参数为用户参数表
 | rt      | long | 当前时间戳 |
 | sv      | int | sdk版本号 |
 | advid      | string | google广告ID |
+| il      | int | 安装位置，0表示在/data/app,1表示在system/app,2表示在sytem/priv-app |
 
 s参数sjon例子：
 <pre><code>
